@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------
+  Custom global tweaks (UX & focus)
+  ------------------------------ */
+
+/* optional: ensure header drop shadow blends in dark mode */
+header {
+  transition: background-color .15s ease;
+}
+.dark header {
+  background-color: #0f172a; /* tailwind gray-900 */
+}
