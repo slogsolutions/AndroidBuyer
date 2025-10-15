@@ -45,7 +45,7 @@ if (!hasMongo) {
   // we don't exit here to allow other dev flows, but it's useful to notice in logs
 }
 
-const AllowedOrigin = [process.env.FRONTEND_URL,'*','http://localhost:5173',process.env.FRONTEND_DEV_URL, 'https://apark-phi.vercel.app'];  //here
+const AllowedOrigin = [process.env.FRONTEND_URL,'*','http://localhost:5173',process.env.FRONTEND_DEV_URL, 'http://android-buyer.vercel.app'];  //here
 
 const app = express();
 const server = http.createServer(app);
