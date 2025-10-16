@@ -152,15 +152,19 @@ export default function SellerNavbar() {
             </Link>
 
             {/* Seller Badge */}
-            <span
-              className="inline-flex items-center gap-2 text-sm font-medium px-2.5 py-1 rounded-full
-                         bg-red-50 text-red-700 ring-1 ring-red-200
-                         dark:bg-red-900/30 dark:text-red-300 dark:ring-red-800"
-              title="Seller mode"
+            <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-400 bg-emerald-50 text-emerald-700 text-sm font-semibold">
+            {/* shopping bag icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 text-emerald-700"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
             >
-              <MdStorefront className="h-4 w-4" />
-              Seller
-            </span>
+              <path d="M7 7V6a5 5 0 0 1 10 0v1h2a1 1 0 0 1 1 1v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V8a1 1 0 0 1 1-1h2zm2 0h6V6a3 3 0 0 0-6 0v1z" />
+            </svg>
+            <span>Buyer</span>
+          </div>
           </div>
 
           {/* Desktop Nav Links */}
